@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #f5f5f5;
+
+}
+
+header{
+    height: 100px;
+}
+
+.container_header{
+max-width: 1200px;
+height: 100%;
+margin: auto;
+padding: 40px;
+padding-top: 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.name{
+    width: 100px;
+}
+
+.name a{
+    text-decoration: none;
+    color: #000;
+    transition: 300ms;
+
+}
+
+.name a:hover{
+    opacity: 0.6;
+}
+
+.menu nav ul{
+    display: flex;
+}
+
+.menu nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.menu nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    transition: opasity 300ms;
+}
+
+.menu nav ul li a:hover{
+    opacity: 0.6;
+}
+
+.btn_header_contact,
+.btn__contact-cover{
+    padding: 14px 50px;
+    border: none;
+    background: #000;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background, color, 300ms;
+}
+
+.btn_header_contact:hover,
+.btn__contact-cover:hover{
+    background: #69F1A1;
+    color: #000;
+}
+
+#icon_menu{
+    text-decoration: none;
+    display: none;
+    color: #000;
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+/*PORTADA - COVER*/
+
+main{
+    max-width: 1200px;
+    height: calc(100vh + 800px);
+    padding: 40px;
+    margin: auto;
+}
+
+.cover{
+  display: flex;  
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.text__information-cover{
+    width: 50%;
+}
+
+.text__information-cover h1{
+    font-size: 50px;
+}
+
+.text__information-cover p{
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.text__information-cover a{
+    text-decoration: none;
+}
+
+.buttons_cover{
+    display: flex;
+    margin-top: 40px;
+}
+
+.btn__aboutme-cover{
+padding: 14px 40px;
+border: none;
+color: black;
+font-weight: 500;
+font-size: 16px;
+cursor: pointer;
+margin-left: 10px;
+transition: 300ms;
+}
+
+.btn__aboutme-cover:hover{
+    background: #b4b4b4;
+}
+
+.media__cover{
+    width: 50%;
+}
+
+.media__cover video{
+    width: 100%;
+    margin-top: 10%;
+}
+
+/*BANNER ONE*/
+
+.container__banner{
+    margin-top: 10%;
+}
+
+.banner{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background: #121214;
+    position: relative;
+}
+
+.banner__icon-ig{
+    width: 30%;
+    height: 100%;
+}
+
+#icon_ig{
+    width: 400px;
+    margin-top: -20px;
+    position: relative;
+    filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0,5));
+}
+
+.banner__text{
+    width: 60%;
+    position: relative;
+    padding: 40px;
+}
+
+.banner__text h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.banner__text a{
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 300ms;
+}
+
+.banner__text a:hover{
+    color: #69F1A1
+}
+
+.banner__icon-link{
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    overflow: hidden;
+}
+
+#icon_link{
+    width: 300px;
+    position: relative;
+    margin-top: -10px;
+    opacity: 0.6;
+}
+
+/*BANNER TWO*/
+
+.container__banner_aboutme{
+    margin-top: 10%;
+}
+
+.banner_second{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background: #69F1A1;
+    position: relative;
+}
+
+.banner_icon-profile{
+    width: 30%;
+    height: 100%;
+}
+
+#icon_profile{
+    width: 300px;
+    margin-top: 72px;
+    position: relative;
+    filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0,5));
+}
+
+.banner_text{
+    width: 60%;
+    position: relative;
+    padding: 40px;
+}
+
+.banner_text h2{
+    color: #000;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.banner_text p{
+    width: 70%;
+    margin-top: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.banner_icon-data{
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    overflow: hidden
+}
+
+#icon_data{
+    width: 250px;
+    position: relative;
+    margin-top: -115px;
+}
+
+/* BANNER THREE*/
+
+.container_banner_data-academic{
+    margin-top: 10%;
+}
+
+.banner_three{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background: #000;
+    position: relative;
+}
+
+.banner_icon_study{
+    width: 30%;
+    height: 100%;
+}
+
+#icon_study{
+    width: 300px;
+    margin-top: 72px;
+    position: relative;
+    filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0,5));
+}
+
+.banner_text-data{
+    width: 60%;
+    position: relative;
+    padding: 40px;
+}
+
+.banner_text-data h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+
+}
+
+.banner_text-data p{
+    width: 70%;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.banner_text-data a{
+    color: #69F1A1;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.banner_text-data a:hover{
+    opacity: 0.6;
+}
+
+.banner_icon_book{
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    overflow: hidden
+}
+
+#icon_book{
+    width: 275px;
+    position: relative;
+    margin-top: -120px;
+}
+
+/* Banner Five */
+
+.container_banner_tech{
+    margin-top: 10%;
+}
+
+.banner_five{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background: #69F1A1;
+    position: relative;
+}
+
+.banner_icon_html{
+    width: 30%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+#icon_html{
+    width: 265px;
+    margin-top: 30px;
+    position: relative;
+    filter: drop-shadow(-60px 0px 30px rgba(0,0,0,0,5));
+}
+
+.banner_text-tech{
+    width: 60%;
+    position: relative;
+    padding: 40px;
+}
+
+.banner_text-tech h2{
+    color: #000;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.banner_text-tech p{
+    width: 70%;
+    margin-top: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.banner_icon_javascript{
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    overflow: hidden
+}
+
+#icon_javascript{
+    width: 230px;
+    position: relative;
+    margin-top: -135px;
+}
+
+/* ----- Banner Ult ----- */
+
+.container-ult{
+    margin-top: 5%;
+}
+
+.banner_ult{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    position: relative;
+}
+
+
+/* ----- RESPONSIVE ----- */
+
+@media (max-width: 1024px) {
+    .container_header,
+    main{
+        padding: 20px;
+    }
+
+    #icon_menu{
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .header_contact{
+        display: none;
+    }
+
+    .menu{
+        height: 0px;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        overflow: hidden;
+        z-index: 10;
+        box-shadow: 0px 0px 30px -20px rgba(0,0,0,0);
+        transition: all 300ms;
+    }
+
+    .menu nav ul{
+        padding: 20px 0px;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    .menu nav ul li{
+        padding: 10px 40px;
+    }
+
+    .mostrar_menu{ 
+        height: 235px;
+
+    }
+    
+    .text__information-cover h1{
+        font-size: 40px;
+    }
+
+    .text__information-cover p{
+        font-size: 16pz;
+    }
+
+    .banner__text, .banner_text h2, .banner_text-data h2, .banner_text-tech h2{
+        font-size: 22px;
+    }
+
+    #icon_ig, #icon_profile, #icon_study, #icon_html{
+      left: -60px;  
+    }
+
+    .banner__icon-link, .banner_icon-data, .banner_icon_book, .banner_icon_javascript{
+        right: -20;
+    }
+}
+
+@media (max-width: 896px) {
+    .text__information-cover{
+        width: 100%;
+    }
+
+    .media__cover{
+        display: none;
+    }
+
+    .banner, .banner_second, .banner_three, .banner_five{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #icon_link, #icon_data, #icon_book, #icon_javascript{
+        display: none;
+    }
+
+    #icon_ig, #icon_profile, #icon_study, #icon_html{
+        left: 0;
+    }
+
+    .banner__text, .banner_text, .banner_text-data, .banner_text-tech{
+        width: 100%;
+        margin-top: -100px;
+    }
+}
